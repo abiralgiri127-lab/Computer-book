@@ -5,4 +5,7 @@ TAGS COVERED:
 1.HTML=<HTML></HTML>
 2.HEAD=<HEAD></HEAD>
 3.BODY=<BODY></BODY>
-4.
+4.pre=<pre></pre>
+h1=<h1></h1>
+hr=<hr>
+a=<a></a>
