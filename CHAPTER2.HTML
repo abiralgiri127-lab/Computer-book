@@ -2,5 +2,158 @@
    <head></head>
     <body>
        <H1><A HREF="tableofcontents.html">Back to table of contents</A></H1> 
+       <pre>
+        <H1>Unit 2: Number System and Conversion & Boolean Logic</H1>
+<h2>2.1 Number System and Base Conversion
+</h2>2.1.1 Introduction to Number Systems
+Definition:
+A number system is a mathematical code used to represent quantities, values, or counts. The total number of unique digits or symbols used in a specific number system is called its base or radix.
+
+Four Primary Number Systems:
+
+Decimal Number System: Base-10 system. Uses digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+Binary Number System: Base-2 system. Uses digits 0 and 1. It is the fundamental language used by digital computer hardware.
+
+Octal Number System: Base-8 system. Uses digits 0, 1, 2, 3, 4, 5, 6, 7.
+
+Hexadecimal Number System: Base-16 system. Uses digits 0 to 9 and letters A, B, C, D, E, F (where A=10, B=11, C=12, D=13, E=14, F=15).
+
+<h2>2.1.2 Number System Conversions</h2>
+<B>1. Decimal to Other Bases (Binary, Octal, Hexadecimal):</B>
+
+Integer Part: Successively divide the decimal number by the target base and collect the remainders from bottom to top (Least Significant Bit to Most Significant Bit).
+
+Fractional Part: Successively multiply the fractional part by the target base and record the integer parts from top to bottom.
+
+<b>2. Other Bases to Decimal:</b>
+Multiply each digit by its corresponding positional weight (base^position) and sum all the products.
+
+<b>3. Binary to Octal and Hexadecimal:</b>
+
+Binary to Octal: Group binary bits into sets of 3 bits starting from the binary point, then convert each group to its octal equivalent.
+
+Binary to Hexadecimal: Group binary bits into sets of 4 bits starting from the binary point, then convert each group to its hexadecimal equivalent.
+
+<h2>2.1.3 Binary Arithmetic</h2>
+Binary Addition Rules:
+
+0 + 0 = 0
+
+0 + 1 = 1
+
+1 + 0 = 1
+
+1 + 1 = 0 (with a carry of 1 to the next column)
+
+1 + 1 + 1 = 1 (with a carry of 1 to the next column)
+
+Binary Subtraction Rules:
+
+0 - 0 = 0
+
+1 - 0 = 1
+
+1 - 1 = 0
+
+0 - 1 = 1 (requires borrowing 1 from the next higher column)
+
+<h2>2.1.4 1's and 2's Complement</h2>
+Complements are used in computer systems to simplify subtraction operations and represent signed negative integers.
+
+1's Complement: Invert all bits of a binary number (change every 0 to 1 and every 1 to 0).
+
+2's Complement: Add 1 to the 1's complement of the binary number (2's Complement = 1's Complement + 1).
+
+<h2>Subtraction using 2's Complement (A - B):</h2>
+
+Find the 2's complement of the subtrahend (B).
+
+Add the 2's complement of B to the minuend (A).
+
+If a carry is generated: Discard the carry. The result is positive.
+
+If no carry is generated: Take the 2's complement of the resulting sum and attach a negative sign.
+
+<h2>2.2 Boolean Logic and Logic Gates</h2>
+<b>2.2.1 Introduction to Boolean Algebra</b>
+Boolean algebra is a branch of algebra that deals with binary variables and logical operations. It uses truth values (1 for True, 0 for False) to analyze and simplify digital logic circuits.
+
+<b>2.2.2 Basic Logic Gates</b>
+A logic gate is an electronic circuit with one or more inputs and a single output based on logical rules.
+
+1. AND Gate (Logical Multiplication):
+
+Formula: Y = A . B
+
+Rule: Output is High (1) only if all inputs are High (1).
+
+Truth Values: 0 . 0 = 0 | 0 . 1 = 0 | 1 . 0 = 0 | 1 . 1 = 1
+
+2. OR Gate (Logical Addition):
+
+Formula: Y = A + B
+
+Rule: Output is High (1) if at least one input is High (1).
+
+Truth Values: 0 + 0 = 0 | 0 + 1 = 1 | 1 + 0 = 1 | 1 + 1 = 1
+
+3. NOT Gate (Inverter):
+
+Formula: Y = NOT A (A')
+
+Rule: Output is the inverse of the input.
+
+Truth Values: NOT 0 = 1 | NOT 1 = 0
+
+<b>2.2.3 Universal Logic Gates</b>
+NAND and NOR gates are called Universal Gates because any boolean function or logic gate (AND, OR, NOT) can be constructed using only NAND gates or only NOR gates.
+
+1. NAND Gate (NOT-AND):
+
+Formula: Y = NOT(A . B)
+
+Rule: Output is Low (0) only when all inputs are High (1). Inverse of AND gate.
+
+2. NOR Gate (NOT-OR):
+
+Formula: Y = NOT(A + B)
+
+Rule: Output is High (1) only when all inputs are Low (0). Inverse of OR gate.
+
+<b>2.2.4 Exclusive Logic Gates</b>
+1. XOR Gate (Exclusive-OR):
+
+Formula: Y = A XOR B
+
+Rule: Output is High (1) when the inputs are different (odd number of 1s).
+
+2. XNOR Gate (Exclusive-NOR):
+
+Formula: Y = NOT(A XOR B)
+
+Rule: Output is High (1) when the inputs are identical (even number of 1s).
+
+2.2.5 Laws and Theorems of Boolean Algebra
+Identity Law: A + 0 = A | A . 1 = A
+
+Null (Annulment) Law: A + 1 = 1 | A . 0 = 0
+
+Idempotent Law: A + A = A | A . A = A
+
+Complement Law: A + (NOT A) = 1 | A . (NOT A) = 0
+
+Double Negation Law: NOT(NOT A) = A
+
+Commutative Law: A + B = B + A | A . B = B . A
+
+Associative Law: (A + B) + C = A + (B + C) | (A . B) . C = A . (B . C)
+
+Distributive Law: A . (B + C) = (A . B) + (A . C) | A + (B . C) = (A + B) . (A + C)
+
+De Morgan's First Theorem: NOT(A . B) = (NOT A) + (NOT B)
+
+De Morgan's Second Theorem: NOT(A + B) = (NOT A) . (NOT B)
+       </pre>
     </body>
 </html>
