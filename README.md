@@ -10,5 +10,3 @@ TAGS COVERED:
 5. h1=<h1></h1>
 6. hr=<hr>
 7. a=<a></a>
-Contents covered
-Made table of contents
