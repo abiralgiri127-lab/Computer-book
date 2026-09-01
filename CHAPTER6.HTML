@@ -27,46 +27,46 @@ URL (Uniform Resource Locator): The complete web address used to locate a specif
 Definition: HTML is a standard markup language used to structure and format web pages using elements and tags.
 
 <h2>6.2.1 Basic Structure of an HTML5 Document</h2>
-Document Type (<!DOCTYPE html>): Specifies the document type and HTML version.
+Document Type (!DOCTYPE html>): Specifies the document type and HTML version.
 
-Root Element (<html>): Encloses all code on the web page.
+Root Element (html): Encloses all code on the web page.
 
-Header Section (<head>): Contains page metadata, title, character encoding, and links to external stylesheets or scripts.
+Header Section (head): Contains page metadata, title, character encoding, and links to external stylesheets or scripts.
 
-Body Section (<body>): Contains all visible content displayed to the user (text, images, links, tables).
+Body Section (body): Contains all visible content displayed to the user (text, images, links, tables).
 
 <h2>6.2.2 HTML Tags, Attributes, and Elements</h2>
-HTML Tag: Keywords enclosed in angle brackets that define how content is rendered (e.g., <p>, <h1>). Most tags come in pairs: opening tag <tag> and closing tag </tag>.
+HTML Tag: Keywords enclosed in angle brackets that define how content is rendered (e.g., p, h). Most tags come in pairs: opening tag <tag> and closing tag </tag>.
 
 Empty / Self-Closing Tags: Tags that do not enfold content and do not require a closing tag (e.g., <br>, <img>, <hr>).
 
-HTML Attribute: Provides additional properties or configuration to an element inside the opening tag (e.g., <a href="page.html">, <img src="photo.jpg" alt="Description">).
+HTML Attribute: Provides additional properties or configuration to an element inside the opening tag (e.g., a href="page.html">, img src="photo.jpg" alt="Description").
 
 <h2>6.3 Core HTML Elements and Formatting</h2>
 <h2>6.3.1 Text Formatting Tags</h2>
 Headings: <h1> to <h6> (defining structural heading levels from largest to smallest).
 
-Paragraph: <p> (defines text blocks).
+Paragraph: p (defines text blocks).
 
-Line Break & Horizontal Rule: <br> (forces line break), <hr> (inserts thematic horizontal line).
+Line Break & Horizontal Rule: br (forces line break), hr (inserts thematic horizontal line).
 
-Styling Text: <b> or <strong> (bold text), <i> or <em> (italic text), <u> (underlined text), <mark> (highlighted text), <sub> (subscript), <sup> (superscript).
+Styling Text: b or strong (bold text), <i> or <em> (italic text), <u> (underlined text), <mark> (highlighted text), <sub> (subscript), <sup> (superscript).
 
 <h2>6.3.2 Lists in HTML</h2>
-Ordered List (<ol>): Numbered or sequential list items defined using <li> tags (attributes: type="1|a|A|i|I").
+Ordered List (ol): Numbered or sequential list items defined using <li> tags (attributes: type="1|a|A|i|I").
 
-Unordered List (<ul>): Bulleted list items defined using <li> tags (attributes: type="disc|circle|square").
+Unordered List (ul): Bulleted list items defined using <li> tags (attributes: type="disc|circle|square").
 
-Description List (<dl>): Defines term-definition pairs using <dt> (definition term) and <dd> (definition description).
+Description List (dl): Defines term-definition pairs using <dt> (definition term) and <dd> (definition description).
 
 <h2>6.3.3 Hyperlinks and Images</h2>
-Hyperlinks (<a>): Connects to other web pages or external resources.
+Hyperlinks (a): Connects to other web pages or external resources.
 
 Attribute href: Specifies the target URL.
 
 Attribute target="_blank": Opens the linked document in a new browser tab.
 
-Images (<img>): Embeds visual media into a page.
+Images (img): Embeds visual media into a page.
 
 Attribute src: Path or URL of the image file.
 
@@ -75,9 +75,9 @@ Attribute alt: Alternative descriptive text displayed if the image fails to load
 Attributes width and height: Defines image display dimensions.
 
 <h2>6.3.4 Tables in HTML</h2>
-Table Container (<table>): Encloses table elements.
+Table Container (table): Encloses table elements.
 
-Rows and Cells: <tr> (table row), <th> (table header cell with bold centered text), <td> (table data cell).
+Rows and Cells: tr (table row), th (table header cell with bold centered text), td (table data cell).
 
 Spanning Attributes:
 
@@ -88,9 +88,9 @@ rowspan: Merges multiple adjacent rows together.
 <h2>6.3.5 Forms in HTML</h2>
 Forms collect input data from users for submission to a server.
 
-Form Container (<form>): Holds input fields (attributes: action for processing script URL, method="GET|POST").
+Form Container (form): Holds input fields (attributes: action for processing script URL, method="GET|POST").
 
-Input Elements (<input>):
+Input Elements (input):
 
 type="text": Single-line text field.
 
@@ -104,9 +104,9 @@ type="submit": Button that submits form data.
 
 type="reset": Button that resets all form fields to default values.
 
-Textarea (<textarea>): Multi-line text input field.
+Textarea (textarea): Multi-line text input field.
 
-Dropdown List (<select> and <option>): Creates a collapsible selection menu.
+Dropdown List (select and option): Creates a collapsible selection menu.
 
 <h2>6.4 CSS (Cascading Style Sheets) Basics</h2>
 Definition: CSS is a style sheet language used to describe the visual presentation, layout, fonts, and colors of an HTML document.
@@ -114,9 +114,9 @@ Definition: CSS is a style sheet language used to describe the visual presentati
 <h2>6.4.1 Types of CSS Insertion</h2>
 Inline CSS: Applied directly within an individual HTML tag using the style attribute.
 
-Internal / Embedded CSS: Defined inside a <style> element within the <head> section of an HTML file.
+Internal / Embedded CSS: Defined inside a style element within the head section of an HTML file.
 
-External CSS: Written in a separate file with a .css extension and linked to the HTML document via <link rel="stylesheet" href="style.css"> inside the <head> section.
+External CSS: Written in a separate file with a .css extension and linked to the HTML document via link rel"stylesheet" href"style.css"> inside the head section.
 
 6.4.2 Basic CSS Selectors and Syntax
 Element Selector: Targets all instances of a specific HTML tag (e.g., p { color: red; }).
