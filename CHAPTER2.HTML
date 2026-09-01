@@ -20,16 +20,16 @@ Octal Number System: Base-8 system. Uses digits 0, 1, 2, 3, 4, 5, 6, 7.
 Hexadecimal Number System: Base-16 system. Uses digits 0 to 9 and letters A, B, C, D, E, F (where A=10, B=11, C=12, D=13, E=14, F=15).
 
 <h2>2.1.2 Number System Conversions</h2>
-<B>1. Decimal to Other Bases (Binary, Octal, Hexadecimal):</B>
+<h2>1. Decimal to Other Bases (Binary, Octal, Hexadecimal):</h2>
 
 Integer Part: Successively divide the decimal number by the target base and collect the remainders from bottom to top (Least Significant Bit to Most Significant Bit).
 
 Fractional Part: Successively multiply the fractional part by the target base and record the integer parts from top to bottom.
 
-<b>2. Other Bases to Decimal:</b>
+<h2>2. Other Bases to Decimal:</h2>
 Multiply each digit by its corresponding positional weight (base^position) and sum all the products.
 
-<b>3. Binary to Octal and Hexadecimal:</b>
+<h2>3. Binary to Octal and Hexadecimal:</h2>
 
 Binary to Octal: Group binary bits into sets of 3 bits starting from the binary point, then convert each group to its octal equivalent.
 
@@ -76,10 +76,10 @@ If a carry is generated: Discard the carry. The result is positive.
 If no carry is generated: Take the 2's complement of the resulting sum and attach a negative sign.
 
 <h2>2.2 Boolean Logic and Logic Gates</h2>
-<b>2.2.1 Introduction to Boolean Algebra</b>
+<h2>2.2.1 Introduction to Boolean Algebra</h2>
 Boolean algebra is a branch of algebra that deals with binary variables and logical operations. It uses truth values (1 for True, 0 for False) to analyze and simplify digital logic circuits.
 
-<b>2.2.2 Basic Logic Gates</b>
+<h2>2.2.2 Basic Logic Gates</h2>
 A logic gate is an electronic circuit with one or more inputs and a single output based on logical rules.
 
 1. AND Gate (Logical Multiplication):
@@ -106,7 +106,7 @@ Rule: Output is the inverse of the input.
 
 Truth Values: NOT 0 = 1 | NOT 1 = 0
 
-<b>2.2.3 Universal Logic Gates</b>
+<h2>2.2.3 Universal Logic Gates</h2>
 NAND and NOR gates are called Universal Gates because any boolean function or logic gate (AND, OR, NOT) can be constructed using only NAND gates or only NOR gates.
 
 1. NAND Gate (NOT-AND):
@@ -121,7 +121,7 @@ Formula: Y = NOT(A + B)
 
 Rule: Output is High (1) only when all inputs are Low (0). Inverse of OR gate.
 
-<b>2.2.4 Exclusive Logic Gates</b>
+<h2>2.2.4 Exclusive Logic Gates</h2>
 1. XOR Gate (Exclusive-OR):
 
 Formula: Y = A XOR B
